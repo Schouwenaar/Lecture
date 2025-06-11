@@ -1,22 +1,15 @@
 ---
 title: "Template"
 author: "Studentnames and studentnumbers here"
-date: "`r Sys.Date()`"
-output: pdf_document
+date: '`r Sys.Date()`'
+output:
+  pdf_document: default
 ---
 
 # Set-up your environment
 
-```{r package_install, include=FALSE}
-install.packages("tidyverse")
-install.packages("yaml")
-install.packages("rmarkdown")
-```
-
 ```{r packages}
-require(tidyverse)
-require(rmarkdown)
-require(yaml)
+library(tidyverse)
 ```
 
 # Title Page
@@ -39,7 +32,6 @@ Include the following:
 
 -   ...
 
-`r code`
 
 # Part 2 - Data Sourcing
 
